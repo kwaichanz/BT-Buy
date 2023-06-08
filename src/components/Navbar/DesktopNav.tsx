@@ -8,6 +8,7 @@ import {
 import { AppLogo } from "../AppLogo";
 import { navItems } from "@src/helpers";
 import Link from "next/link";
+import Search from "../Search/Search";
 
 export const DesktopNav = () => {
   return (
@@ -21,7 +22,9 @@ export const DesktopNav = () => {
             <Link href={navItem.href}>{navItem.label}</Link>
           </Box>
         ))}
-        <Box>Search</Box>
+        <Box>
+          <Search />
+        </Box>
       </Stack>
       <Stack {...cartSectionStyles}>
         <Box>Wishlist</Box>
