@@ -2,7 +2,7 @@ import { Box, Flex, Stack } from "@chakra-ui/react";
 import React from "react";
 import {
   cartSectionStyles,
-  desktopnavStyles,
+  desktopNavStyles,
   logoSectionStyles,
 } from "./styles";
 import { AppLogo } from "../AppLogo";
@@ -12,7 +12,7 @@ import Search from "../Search/Search";
 
 export const DesktopNav = () => {
   return (
-    <Flex {...desktopnavStyles}>
+    <Flex {...desktopNavStyles}>
       <Stack {...logoSectionStyles}>
         <Box>
           <AppLogo />

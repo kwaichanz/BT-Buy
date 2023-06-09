@@ -5,8 +5,8 @@ import { searchInputStyles } from "./styles";
 
 export default function Search() {
   return (
-    <Box>
-      <InputGroup size="sm" width={{Base: "100%", lg: "32rem"}}>
+    <Box pos="relative" w={{ base: "100%", lg: "32rem" }}>
+      <InputGroup size="sm" width={{ Base: "100%", lg: "32rem" }}>
         <InputLeftElement pointerEvents="none">
           <SearchIcon color="gray.400" />
         </InputLeftElement>

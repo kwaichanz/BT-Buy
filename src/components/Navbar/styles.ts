@@ -8,13 +8,14 @@ export const navbarStyles: BoxProps = {
   zIndex: 10,
 };
 
-export const desktopnavStyles: FlexProps = {
+export const desktopNavStyles: FlexProps = {
   justify: "space-between",
   align: "center",
   px: "2rem",
   py: "1rem",
   borderBottomWidth: "1px",
   borderColor: "gray.200",
+  display: { base: "none", lg: "flex" },
 };
 
 export const logoSectionStyles: StackProps = {
@@ -27,4 +28,21 @@ export const logoSectionStyles: StackProps = {
 export const cartSectionStyles: StackProps = {
   direction: "row",
   spacing: "2",
+};
+
+export const mobileNavContainerStyles: FlexProps = {
+  justify: "space-between",
+  align: "center",
+  px: "2rem",
+  py: "1rem",
+  borderBottom: "1px",
+  borderColor: "gray",
+  display: { base: "flex", lg: "none" },
+};
+
+export const mobileSearchWrapper: BoxProps = {
+  px: "2rem",
+  py: "0.5rem",
+  mb: "1rem",
+  display: { base: "block", lg: "none" },
 };
