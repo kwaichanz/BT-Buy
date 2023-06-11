@@ -1,7 +1,7 @@
 import { Box, Flex, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { AppLogo } from "../AppLogo";
-import { mobileNavContainerStyles, mobileSearchWrapper } from "./styles";
+import { mobileNavContainerStyles, mobileSearchWrapper } from "./style";
 import Search from "../Search/Search";
 
 export const MobileNav = () => {

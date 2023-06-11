@@ -4,7 +4,7 @@ import {
   cartSectionStyles,
   desktopNavStyles,
   logoSectionStyles,
-} from "./styles";
+} from "./style";
 import { AppLogo } from "../AppLogo";
 import { navItems } from "@src/helpers";
 import Link from "next/link";
