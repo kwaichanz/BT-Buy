@@ -1,4 +1,10 @@
-import { FlexProps, HeadingProps, TextProps } from "@chakra-ui/react";
+import {
+  BoxProps,
+  ButtonProps,
+  FlexProps,
+  HeadingProps,
+  TextProps,
+} from "@chakra-ui/react";
 
 export const bannerStyles: FlexProps = {
   justify: "center",
@@ -20,4 +26,19 @@ export const bannerTextStyles: TextProps = {
   fontSize: { base: "md", lg: "lg" },
   py: "1rem",
   maxW: "600px",
+};
+
+export const bannerBtnStyles: ButtonProps = {
+  rounded: "full",
+  minW: "10rem",
+  bgColor: "brand.primary",
+  color: "white",
+  _hover: { bgColor: "brand.primaryDark" },
+};
+
+export const bannerImageBoxStyles: BoxProps = {
+  my: "2rem",
+  w: { base: "300px", lg: "600px" },
+  h: { base: "300px", lg: "500px" },
+  bg: "center / cover no-repeat url(mockup.svg)",
 };
