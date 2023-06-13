@@ -5,5 +5,9 @@ interface SectionHeadingProps {
   title: string;
 }
 export const SectionHeading = ({ title }: SectionHeadingProps) => {
-  return <Heading>{title}</Heading>;
+  return (
+    <Heading size="md" my="1.5rem">
+      {title}
+    </Heading>
+  );
 };
