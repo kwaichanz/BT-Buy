@@ -1,4 +1,5 @@
 import { Banner } from "@src/features/home/Banner";
+import { FeaturedProducts } from "@src/features/home/FeaturedProducts";
 import { TopCategories } from "@src/features/home/TopCategories";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Banner />
       <TopCategories />
+      <FeaturedProducts />
     </div>
   );
 }

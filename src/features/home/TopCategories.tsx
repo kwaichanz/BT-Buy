@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { SectionHeading } from "@src/components/SectionHeading";
 import React from "react";
+import { cardStyles } from "./style";
 
 export const TopCategories = () => {
   return (
@@ -21,7 +22,7 @@ export const TopCategories = () => {
         templateColumns={{
           base: "repeat(1, 1fr)",
           md: " repeat(2, 1fr)",
-          lg: "repeat(4,1fr)",
+          xl: "repeat(4,1fr)",
         }}
       >
         <GridItem>
@@ -43,16 +44,8 @@ export const TopCategories = () => {
 
 const TopCategoryCard = () => {
   return (
-    <Card
-      direction="row"
-      align="center"
-      overflow="hidden"
-      variant="outline"
-      w="100%"
-      h="100%"
-      p="10px"
-    >
-      <Image alt="" />
+    <Card {...cardStyles}>
+      <Image src="product1.jpg" alt="" w={100} h={100} />
       <CardBody>
         <Heading size={{ base: "sm", lg: "md" }}>Watches</Heading>
       </CardBody>

@@ -1,6 +1,7 @@
 import {
   BoxProps,
   ButtonProps,
+  CardProps,
   FlexProps,
   HeadingProps,
   TextProps,
@@ -41,4 +42,15 @@ export const bannerImageBoxStyles: BoxProps = {
   w: { base: "300px", lg: "600px" },
   h: { base: "300px", lg: "500px" },
   bg: "center / cover no-repeat url(mockup.svg)",
+};
+
+export const cardStyles: CardProps = {
+  direction: "row",
+  align: "center",
+  overflow: "hidden",
+  variant: "outline",
+  w: "100%",
+  h: "100%",
+  p: "10px",
+  _hover: { cursor: "pointer", bgColor: "gray.100" },
 };
