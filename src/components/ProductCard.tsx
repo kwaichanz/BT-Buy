@@ -1,10 +1,6 @@
 import {
-  Button,
-  ButtonGroup,
   Card,
   CardBody,
-  CardFooter,
-  Divider,
   Flex,
   Heading,
   Image,
@@ -13,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Rating } from "./Rating";
+import { AddToCartButton } from "./AddToCartButton";
 
 export const ProductCard = () => {
   return (
@@ -33,6 +30,8 @@ export const ProductCard = () => {
           </Flex>
           <Text>This sofa is perfect for modern tropical spaces</Text>
           <Rating />
+
+          <AddToCartButton />
         </Stack>
       </CardBody>
     </Card>

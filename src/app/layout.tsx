@@ -1,5 +1,7 @@
 "use client";
 
+import "swiper/css";
+import "swiper/css/bundle"
 import { Inter } from "next/font/google";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
