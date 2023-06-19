@@ -1,5 +1,6 @@
 "use client";
 import { ProductCard } from "@src/components/ProductCard";
+import { SwiperNavButtons } from "@src/components/SwiperNavButtons";
 import React, { CSSProperties } from "react";
 import { SwiperOptions, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -38,6 +39,8 @@ export const FeaturedProducts = () => {
         <SwiperSlide style={slideStyles}>
           <ProductCard />
         </SwiperSlide>
+
+        <SwiperNavButtons />
       </Swiper>
     </div>
   );
