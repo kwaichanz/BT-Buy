@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Banner />
       <TopCategories />
-      <FeaturedProducts />
+      <FeaturedProducts title="Trending Products" />
     </div>
   );
 }
