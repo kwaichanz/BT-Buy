@@ -35,6 +35,7 @@ const SocialButton = ({
       href={href}
       display={"inline-flex"}
       alignItems={"center"}
+      justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
         bg: "blackAlpha.200",
@@ -79,6 +80,7 @@ export const Footer = () => {
               </SocialButton>
             </Stack>
           </Stack>
+
           <Stack align="flex-start">
             <ListHeader>Company</ListHeader>
             <Link href={"#"}>About us</Link>
@@ -92,6 +94,7 @@ export const Footer = () => {
             <Link href={"#"}>Terms of Service</Link>
             <Link href={"#"}>Privacy Policy</Link>
           </Stack>
+
           <Stack align="flex-start">
             <ListHeader>Get the best deals</ListHeader>
             <Stack direction={"row"}>

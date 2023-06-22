@@ -10,26 +10,27 @@ import {
 import React from "react";
 import { Rating } from "./Rating";
 import { AddToCartButton } from "./AddToCartButton";
+import { IProduct } from "@src/model";
 
-export const ProductCard = () => {
+interface IProductCardProps {
+  product: IProduct;
+}
+
+export const ProductCard = ({ product }: IProductCardProps) => {
   return (
     <Card w="xs" pos="relative" m="0.5rem">
       <CardBody>
-        <Image
-          src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          alt="Green double couch with wooden legs"
-          borderRadius="lg"
-        />
+        <Image src={product.mainImage} alt={product.name} />
         <Stack mt="6" spacing="3">
           <Flex justify="space-between" align="center">
-            <Heading size="md">Living room Sofa</Heading>
+            <Heading size="md">{product.name}</Heading>
             <Flex color="brand.primary.dark" fontWeight="bold">
               <Text fontSize="sm">$</Text>
-              <Text fontSize="lg">100</Text>
+              <Text fontSize="lg">{product.price}</Text>
             </Flex>
           </Flex>
-          <Text>This sofa is perfect for modern tropical spaces</Text>
-          <Rating />
+          <Text>{product.description}</Text>
+          <Rating rating={product.rating} />
 
           <AddToCartButton />
         </Stack>
